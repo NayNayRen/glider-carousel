@@ -1,6 +1,4 @@
 window.addEventListener("load", () => {
-  const reloadButton = document.querySelector(".reload-button");
-  const destroyButton = document.querySelector(".destroy-button");
   let gliders = document.querySelectorAll(".glider");
   gliders.forEach((glider) => {
     // [].forEach.call(document.querySelectorAll(".glider"), function (ele) {
@@ -47,12 +45,6 @@ window.addEventListener("load", () => {
           },
         },
       ],
-    });
-    destroyButton.addEventListener("click", () => {
-      Glider(glider).destroy();
-    });
-    reloadButton.addEventListener("click", () => {
-      Glider(glider).refresh(true);
     });
   });
 });
