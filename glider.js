@@ -1,14 +1,13 @@
 window.addEventListener("load", () => {
   let gliders = document.querySelectorAll(".glider");
-  gliders.forEach((glider) => {
-    // [].forEach.call(document.querySelectorAll(".glider"), function (ele) {
+  gliders.forEach((glider, ele) => {
     new Glider(glider, {
       slidesToShow: 1,
       slidesToScroll: 1,
       scrollLock: true,
       draggable: true,
       rewind: true,
-      // dots: ele.parentNode.querySelector(".dots"),
+      dots: glider.parentNode.querySelector(".dots"),
       arrows: {
         prev: glider.parentNode.querySelector(".glider-prev"),
         next: glider.parentNode.querySelector(".glider-next"),
@@ -28,7 +27,7 @@ window.addEventListener("load", () => {
           // screens greater than > 700px
           breakpoint: 700,
           settings: {
-            slidesToShow: 2,
+            slidesToShow: 1,
             slidesToScroll: 1,
             // itemWidth: 150,
             duration: 1,
@@ -38,7 +37,7 @@ window.addEventListener("load", () => {
           // screens greater than > 1300px
           breakpoint: 1300,
           settings: {
-            slidesToShow: 3,
+            slidesToShow: 1,
             slidesToScroll: 1,
             // itemWidth: 150,
             duration: 1,

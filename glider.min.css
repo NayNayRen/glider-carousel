@@ -14,7 +14,7 @@ html {
   border-radius: 5px;
   height: 350px;
   text-align: center;
-  width: 300px;
+  width: 80%;
 }
 
 .container {
@@ -54,6 +54,7 @@ html {
   justify-content: flex-start;
   overflow: hidden;
   width: 100%;
+  /* outline: solid 1px red; */
 }
 
 .glider::-webkit-scrollbar {
